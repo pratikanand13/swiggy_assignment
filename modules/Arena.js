@@ -1,19 +1,19 @@
-import { rollDice } from "../utils/rollDiceUtil.js";
-import { Player } from "./Player.js";
+import { rollDice } from "../utils/rollDiceUtil.js"
+import { Player } from "./Player.js"
 
 export class Arena {
     constructor() {
         this.total_players = 0;
         this._players = [];
-        console.log('Welcome to the game! This is your virtual Arena.\n');
+        console.log('Welcome to the game! This is your virtual Arena.\n')
     }
 
     isPresent(id) {
-        return this._players.some(player => player.id === id);
+        return this._players.some(player => player.id === id)
     }
 
     getPlayerCount() {
-        return this._players.length;
+        return this._players.length
     }
 
     validateAttributes(health, strength, attack) {
